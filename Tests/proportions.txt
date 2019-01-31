@@ -1,0 +1,25 @@
+maxvals: 
+cadet_foil moment: 20004832.0
+
+epee_yellow_0_0: 27906682.0
+
+epee_yellow: wrong place: 13589873 / 16113463.0
+
+jp_v_kor_0-0: 27906682.0 / 33997528.0
+
+small: 1963206.0
+
+up_moment_0-0: 12148834.0 / 15661556.0
+
+up_moment: wrong place: 12766887.0 wtf / 14649568.0
+
+nothing: ? / 16520605.0
+
+
+maybe try take a conservative
+crop that guarantees has 
+country and potential name
+noise and then delete the
+beginning noise? use
+more lenient threshold for
+2nd one. 
