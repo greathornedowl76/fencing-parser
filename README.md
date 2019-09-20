@@ -1,5 +1,6 @@
 # fencing-parser
 Parses through fencing videos and outputs the fencers.
+
 ![Final Output](https://raw.githubusercontent.com/ravenseattuna/fencing-parser/master/Stills/output.png)
 
 # Overview
