@@ -1,11 +1,11 @@
 # fencing-parser
 Parses through fencing videos and outputs the fencers.
-![Final Output](https://ravenseattuna.github.com/Stills/output.png)
+![Final Output](https://raw.githubusercontent.com/ravenseattuna/fencing-parser/master/Stills/output.png)
 
 # Overview
 Currently, the most common overlay used for livestreams of fencing tournaments is Fencing Vision. Due to the semi-consistency of this overlay, this program parses out relevant fencer information such as name and nationality by using OpenCV's template match to locate the overlay's timer.
 
-![Bounding Boxes With Clock as Anchor](https://ravenseattuna.github.com/Stills/video_test.png)
+![Bounding Boxes With Clock as Anchor](https://raw.githubusercontent.com/ravenseattuna/fencing-parser/master/Stills/video_test.jpg)
 
 The extracted images are then read by Google's Tesseract OCR Engine, cleaned up, and outputted in the cmd prompt.
 
