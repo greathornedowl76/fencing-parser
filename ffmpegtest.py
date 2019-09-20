@@ -37,7 +37,7 @@ anomolies = ['|', '©', '_', '~', '/', '<', '>', ':', ';', '?', '!', '-', '`', '
 
 #Debugging
 visualize_all = False
-visualize_box = False
+visualize_box = True
 test = False
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Users\st123\AppData\Local\Tesseract-OCR\tesseract.exe'
@@ -230,7 +230,9 @@ for filename in os.listdir(path):
 				template = cv2.cvtColor(template, cv2.COLOR_BGR2GRAY)
 				(tH, tW) = template.shape[:2]
 
-				image = cv2.cvtColor(numpy_array, cv2.COLOR_BGR2RGB)
+
+				image = numpy_array
+				#image = cv2.cvtColor(numpy_array, cv2.COLOR_BGR2RGB)
 				gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 				found = None
 				# loop over the scales of the image
@@ -274,7 +276,7 @@ for filename in os.listdir(path):
 					#cv2.rectangle(image, (startX - int(TEMPLATE_LEFT_GAP_DIMENSIONS[0] * r) - int(TEMPLATE_LEFT_NAME_DIMENSIONS[0] * r), endY), (endX + int(TEMPLATE_RIGHT_DIMENSION[0]*r) + int(TEMPLATE_RIGHT_GAP_DIMENSIONS[0] * r), startY), (0, 0, 255), 2)
 					cv2.rectangle(image, (startX, endY), (endX, startY), (0, 0, 255), 2)
 					cv2.imshow("Image", image)
-					#cv2.imwrite("video_test.jpg", image)
+					cv2.imwrite("video_test.jpg", image)
 					cv2.waitKey(0)
 
 				if maxVal > 11000000:
